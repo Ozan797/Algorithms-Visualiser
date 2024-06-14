@@ -27,4 +27,16 @@ public class BubbleSort {
     private static void display(int[] arr) {
         System.out.println(Arrays.toString(arr));
     }
+
+    public static void printTimeComplexity() {
+        System.out.println("Time Complexity:");
+        System.out.println("Best Case: O(n)");
+        System.out.println("Average Case: O(n^2)");
+        System.out.println("Worst Case: O(n^2)");
+    }
+
+    public static void printSpaceComplexity() {
+        System.out.println("Space Complexity:");
+        System.out.println("O(1)");
+    }
 }

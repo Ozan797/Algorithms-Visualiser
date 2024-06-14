@@ -26,6 +26,8 @@ public class Main {
             if (choice == 1) {
                 System.out.println("Visualizing Bubble Sort...");
                 BubbleSort.sort(dataArray);
+                BubbleSort.printTimeComplexity();
+                BubbleSort.printSpaceComplexity();
             } else {
                 System.out.println("Invalid choice");
             }
