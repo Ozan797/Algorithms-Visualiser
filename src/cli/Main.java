@@ -1,7 +1,7 @@
 package cli;
 
 import sorting.BubbleSort;
-
+import sorting.SelectionSort;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -12,6 +12,7 @@ public class Main {
         // Get algorithm choice
         System.out.println("Choose an algorithm to visualize:");
         System.out.println("1. Bubble Sort");
+        System.out.println("2. Selection Sort");
         System.out.print("Enter your choice: ");
         int choice = scanner.nextInt();
 
@@ -24,10 +25,13 @@ public class Main {
 
         try {
             if (choice == 1) {
-                System.out.println("Visualizing Bubble Sort...");
+                System.out.println("Visualising Bubble Sort...");
                 BubbleSort.sort(dataArray);
                 BubbleSort.printTimeComplexity();
                 BubbleSort.printSpaceComplexity();
+            } else if (choice == 2) {
+                System.out.println("Visualising Selection Sort...");
+                SelectionSort.sort(dataArray);
             } else {
                 System.out.println("Invalid choice");
             }
