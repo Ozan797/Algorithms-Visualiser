@@ -20,7 +20,7 @@ public class SelectionSort {
 
             // Display current state
             display(arr);
-            Thread.sleep(500); // Pause for visualization
+            Thread.sleep(500); // Pause for visualisation
         }
 
         // Print time complexity
